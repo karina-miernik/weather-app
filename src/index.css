@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: 'montseratt', sans-serif;
+}
+.app {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url('./assets/day.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+.app-night {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(181, 135, 211, 0.2),
+    rgba(72, 37, 247, 0.2)
+  );
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(202, 200, 91, 0.2),
+    rgba(78, 168, 78, 0.2)
+  );
+  padding: 2rem;
+}
+
+.search-box {
+  display: block;
+  width: 100%;
+  margin: 0 0 75px;
+}
