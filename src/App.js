@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import DateGenerator from './components/DateGenerator'
 import WeatherBox from './components/WeatherBox'
+import LocationBox from './components/LocationBox'
 import SearchBox from './components/SearchBox'
 const api = {
   key: '3d489f7ac00fe3d4d4f58ae16fa86e48',
@@ -71,12 +72,10 @@ function App() {
         />
         {typeof weather.main != 'undefined' ? (
           <div>
-            <div className="location-box">
-              <div className="location">
-                {weather.name}, {weather.sys.country}
-              </div>
-              <div className="date">{DateGenerator(new Date())}</div>
-            </div>
+            <LocationBox
+              weatherName={weather.name}
+              weatherCountry={weather.sys.country}
+            />
             <WeatherBox
               weatherTemp={weather.main.temp}
               weatherMain={weather.weather[0].main}
