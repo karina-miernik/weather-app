@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import DateGenerator from './components/DateGenerator'
 import WeatherBox from './components/WeatherBox'
 import LocationBox from './components/LocationBox'
 import SearchBox from './components/SearchBox'
