@@ -14,26 +14,31 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease-out;
-  background-image:url('./assets/day.jpg');
+  background-image:url('./assets/warm.jpg');
 }
-.warm {
-  
-  background-image: linear-gradient(
-    to bottom,
-    rgba(197, 195, 54, 0.3),
-    rgba(86, 194, 86, 0.2)
-  ),
-  url('./assets/day.jpg') ;
+.warm { 
+  background-image: 
+  url('./assets/warm.jpg') ;
+ 
+}
+.hot { 
+  background-image: 
+  url('./assets/hot.png') ;
+ 
+}
+.rain { 
+  background-image: 
+  url('./assets/rain.jpg') ;
  
 }
 
+.snow {
+  background-image: 
+  url('./assets/snow.jpg');
+}
 .cold {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(181, 135, 211, 0.2),
-    rgba(72, 37, 247, 0.2)
-  ),
-  url('./assets/day.jpg');
+  background-image: 
+  url('./assets/cold.jpg');
 }
 
 main {

@@ -77,11 +77,10 @@ function App() {
               </div>
               <div className="date">{DateGenerator(new Date())}</div>
             </div>
-            {/* <WeatherBox /> */}
-            <div className="weather-box">
-              <div className="temp">{Math.round(weather.main.temp)}&#176;C</div>
-              <div className="weather">{weather.weather[0].main}</div>
-            </div>
+            <WeatherBox
+              weatherTemp={weather.main.temp}
+              weatherMain={weather.weather[0].main}
+            />
           </div>
         ) : (
           ''
